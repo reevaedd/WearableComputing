@@ -18,7 +18,7 @@ run_Analysis <- function() {
 
 	## Load in R the activity labels
 	fname <- choose.files(default = "", caption = "Please select the file activity_labels.txt", multi = FALSE)
-	actLbl <- read.table("./activity_labels.txt")
+	actLbl <- read.table(fname)
 
 	## Rename the column of trainLbl
 	colnames(trainLbl) <- "Activity.ID"
@@ -31,7 +31,7 @@ run_Analysis <- function() {
 
 	## Load into R the features
 	fname <- choose.files(default = "", caption = "Please select the file features.txt", multi = FALSE)
-	features <- read.table("./features.txt")
+	features <- read.table(fname)
 
 	## Unfactor features
 	features <- data.frame(lapply(features, as.character), stringsAsFactors = FALSE)
@@ -75,15 +75,15 @@ run_Analysis <- function() {
 
 	## Load in R the test set
 	fname <- choose.files(default = "", caption = "Please select the file X_test.txt", multi = FALSE)
-	Xtest <- read.table("./test/X_test.txt")
+	Xtest <- read.table(fname)
 
 	## Load in R the test labels - Activity IDs
 	fname <- choose.files(default = "", caption = "Please select the file y_test.txt", multi = FALSE)
-	testLbl <- read.table("./test/y_test.txt")
+	testLbl <- read.table(fname)
 
 	## Load into R the subject of the test
 	fname <- choose.files(default = "", caption = "Please select the file subject_test.txt", multi = FALSE)
-	testSubj <- read.table("./test/subject_test.txt")
+	testSubj <- read.table(fname)
 
 	## Rename the column of testLbl
 	colnames(testLbl) <- "Activity.ID"
