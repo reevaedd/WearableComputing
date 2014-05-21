@@ -5,4 +5,4 @@ The script in this repo will create two text files of data frame in your working
 
 The names of the files are 
 
-![Screenshot](https://raw.github.com/reevaedd/WearableComputing/blob/master/FileBrowser.png "File browser opened by the script. Please select the file specified")
+![alt tag](https://raw.github.com/reevaedd/WearableComputing/blob/master/FileBrowser.png "File browser opened by the script. Please select the file specified")
